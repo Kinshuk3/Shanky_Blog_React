@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# BLOG Creating App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Simple Blog application created with React.JS, Javascript, HTML, CSS, JSON server, JSON format(For data storage)
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+  - Features
+  - Installation 
+  - Technologies
+  - Screenshots
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+There are 4 main features of this application as shown below:
+  - View Blogs: The user can see all Blogs fetched from database on the homepage and even the body of the blog by clicking on them.
+  - Add Blogs: The user can add a new Blog which will be updated in the database and also reflect in Homepage along with previous Blogs.
+  - Delete Blogs: The user can delete Blog when they are viewing each Blog and they will be rerouted to Homepage with blog no longer present.
+  - Error Handling: The user if makes requests any wrong request to a page which does not exists, they will get an error page, with option to go back home.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installation 
 
-### `npm test`
+    This app requires you have Node.Js / npm installed on your local computer.
+    Then cd to the directory where this folder is via terminal.
+   
+#### Running the Development Server(put following commands in the terminal): 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```sh
+   npm run start
+   npx json-server --watch data/db.json --port 8000
+   ```
+## Technologies 
 
-### `npm run build`
+  - npm run start installs the required node Modules having all dependencies for the program
+  - json-server will run on port 8000 due to below command, user can choose port of their own but will have to change commands
+  - ReactJS, Hooks, EJX were used to build this application
+  - 'Loading' text used to display user when they make different requests to show the next page is loading
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   - GET The Blogs 
+   <img src="/screenshots/img1.png" alt= "Display all blogs on homepage" width="600" height="300" />
+   - ADD the Blogs
+   <img src="/screenshots/img2.png" alt= "Display all blogs on homepage" width="600" height="300" />
+   - LOADING Page for User when Blog is Added
+    <img src="/screenshots/img3.png" alt= "Display all blogs on homepage" width="600" height="300" />
+   - UPDATED Page with new blog added
+    <img src="/screenshots/img4.png" alt= "Display all blogs on homepage" width="600" height="300" />
+   - VIEW the body of Blogs
+    <img src="/screenshots/img5.png" alt= "Display all blogs on homepage" width="600" height="300" />
+   - DELETE the Blogs so its no longer on Homepage
+    <img src="/screenshots/img6.png" alt= "Display all blogs on homepage" width="600" height="300" />
+   - Displaying 404 error page
+    <img src="/screenshots/img7.png" alt= "Display all blogs on homepage" width="600" height="300" />
