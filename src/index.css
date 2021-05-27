@@ -1,13 +1,113 @@
-body {
+/* 6------------styling the page */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+* {
+  font-family: 'Quicksand', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: hsl(0, 0%, 20%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* centers and styles the whole navbar */
+.navbar{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 10px auto;
+  border-bottom: 2px solid #eeecec;
+}
+
+.navbar h1{
+  color: #cf9090;
+}
+
+/* shifts the links to left */
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a{
+  margin-left: 25px;
+  text-decoration: none;
+  padding:5px;
+}
+
+.navbar a:hover{
+  color: rgb(250, 85, 110);
+}
+
+/* moves the "Homepage text to below header" */
+.content {
+  max-width: 600px;
+  padding: 20px;
+  margin: 40px auto; 
+}
+
+.blog-preview{
+  margin: 20px;
+  padding: 20px;
+  border-bottom: 1px solid #fafafa;
+}
+
+.blog-preview:hover{
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+
+.blog-preview h2{
+  color: #e27575;
+}
+.blog-preview p{
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.blog-preview a{
+  text-decoration: none;
+}
+
+.blog-details h2{
+  font-size: 22px;
+  margin-top: 12px;
+  color: #e27575;
+}
+
+.blog-details div{
+  margin: 20px 0;
+}
+
+
+/* add blogs styling */
+
+.create {
+  max-width: 400px;
+  margin: 0  auto;
+  text-align: center;
+}
+
+.create h2{
+  font-size: 22px;
+  color: #e27575;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.create label{
+  text-align: left;
+  display: block;
+}
+.create input, .create textarea, .create select{
+  width: 100%;
+  padding: 5px 10px;
+  margin: 10px 0px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.create button, .blog-details button {
+  background-color: #e27575;
+  border: 2px solid #fff;
+  border-radius: 2em;
+  cursor: pointer;
+  color: #fff;
+  padding: 8px;
 }

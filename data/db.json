@@ -1,0 +1,16 @@
+{
+  "blogs": [
+    {
+      "title": "Hello",
+      "body": "world is mine",
+      "author": "yoshi",
+      "id": 3
+    },
+    {
+      "title": "Top 10 things to do in Lockdown",
+      "body": "Just do anything at all.",
+      "author": "Mario",
+      "id": 4
+    }
+  ]
+}
