@@ -20,10 +20,12 @@ There are 4 main features of this application as shown below:
 
     This app requires you have Node.Js / npm installed on your local computer.
     Then cd to the directory where this folder is via terminal.
+    This does not include node modules so you would have to install it just follow below commands
    
 #### Running the Development Server(put following commands in the terminal): 
 
    ```sh
+   npm install
    npm run start
    npx json-server --watch data/db.json --port 8000
    ```
@@ -31,7 +33,7 @@ There are 4 main features of this application as shown below:
 
   - npm run start installs the required node Modules having all dependencies for the program
   - json-server will run on port 8000 due to below command, user can choose port of their own but will have to change commands
-  - ReactJS, Hooks, EJX were used to build this application
+  - ReactJS, Hooks, JSX were used to build this application
   - 'Loading' text used to display user when they make different requests to show the next page is loading
 
 ## Screenshots
